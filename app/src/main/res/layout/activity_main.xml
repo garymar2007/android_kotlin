@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Hello, welcome to Gary's Android World !"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="200dp"
         android:text="Show Toast"
         tools:ignore="HardcodedText" />
 
@@ -28,7 +28,7 @@
         android:id="@+id/editUserMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="300dp"
         android:layout_centerHorizontal="true"
         android:inputType="text"
         android:autofillHints="Name"
@@ -37,11 +37,20 @@
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="400dp"
         android:layout_centerHorizontal="true"
         android:text="Next"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnShareToOtherApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:text="Share TO Other APPS"
         tools:ignore="HardcodedText" />
 
 </RelativeLayout>
