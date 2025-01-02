@@ -20,22 +20,29 @@ class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : R
 
         init {
             itemView.setOnClickListener {
-                context.showToast("You selected hobby: " + currentHobby!!.title)
+                currentHobby?.let {
+                    context.showToast("You selected hobby: " + currentHobby!!.title)
+                }
             }
 
             itemView.findViewById<ImageView>(R.id.imgShare).setOnClickListener {
-                val message: String = "My hobby is: " + currentHobby!!.title
-                val intent = Intent()
-                intent.action = Intent.ACTION_SEND
-                intent.putExtra(Intent.EXTRA_TEXT, message)
-                intent.type = "text/plain"
+                currentHobby?.let {
+                    val message: String = "My hobby is: " + currentHobby!!.title
+                    val intent = Intent()
+                    intent.action = Intent.ACTION_SEND
+                    intent.putExtra(Intent.EXTRA_TEXT, message)
+                    intent.type = "text/plain"
 
-                context.startActivity(Intent.createChooser(intent, "Please select app: "))
+                    context.startActivity(Intent.createChooser(intent, "Please select app: "))
+                }
+
             }
         }
 
         fun setData(hobby: Hobby?, position: Int) {
-           itemView.findViewById<TextView>(R.id.txvTitle).text = hobby!!.title
+            hobby?.let {
+                itemView.findViewById<TextView>(R.id.txvTitle).text = hobby.title
+            }
 
             this.currentHobby = hobby
             this.currentPosition = position
