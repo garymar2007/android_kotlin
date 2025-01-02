@@ -40,5 +40,10 @@ class MainActivity : ComponentActivity() {
 
             startActivity(Intent.createChooser(intent, "Select your app: "))
         }
+
+        binding.btnRecyclerView.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
