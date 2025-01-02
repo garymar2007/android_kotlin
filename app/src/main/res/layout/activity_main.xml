@@ -53,4 +53,14 @@
         android:text="Share TO Other APPS"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/btnRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46dp"
+        android:layout_centerHorizontal="true"
+        android:text="Hobbies"
+        tools:ignore="HardcodedText" />
+
 </RelativeLayout>
