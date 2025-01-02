@@ -1,10 +1,10 @@
 package com.gary.msgshareapp.activities
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.gary.msgshareapp.databinding.ActivitySecondBinding
+import com.gary.msgshareapp.showToast
 
 class SecondActivity: ComponentActivity() {
     private lateinit var binding: ActivitySecondBinding
@@ -17,7 +17,7 @@ class SecondActivity: ComponentActivity() {
 
         // Share data in implicit intent
         val message = intent.getStringExtra("user_message")
-        Toast.makeText(this, "Hi, $message", Toast.LENGTH_SHORT).show()
+        showToast( "Hi, $message")
 
         binding.txtUserMessage.text = message
     }
