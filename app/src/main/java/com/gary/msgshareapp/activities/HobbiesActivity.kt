@@ -1,18 +1,28 @@
-package com.gary.msgshareapp
+package com.gary.msgshareapp.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.gary.msgshareapp.adapters.HobbiesAdapter
+import com.gary.msgshareapp.R
+import com.gary.msgshareapp.models.Supplier
 
 class HobbiesActivity: ComponentActivity() {
+    companion object {
+        val TAG: String = HobbiesActivity::class.java.simpleName
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_hobbies)
 
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
 
@@ -21,6 +31,5 @@ class HobbiesActivity: ComponentActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = layoutManager
         //recyclerView.setHasFixedSize(true)
-
     }
 }
