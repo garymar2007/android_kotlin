@@ -1,4 +1,4 @@
-package com.gary.msgshareapp
+package com.gary.msgshareapp.activities
 
 import android.content.Intent
 import android.os.Bundle

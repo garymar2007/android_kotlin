@@ -1,4 +1,4 @@
-package com.gary.msgshareapp
+package com.gary.msgshareapp.activities
 
 import android.os.Bundle
 import android.widget.Toast

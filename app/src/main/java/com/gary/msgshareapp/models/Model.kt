@@ -1,4 +1,4 @@
-package com.gary.msgshareapp
+package com.gary.msgshareapp.models
 
 data class Hobby(var title: String)
 

@@ -1,10 +1,13 @@
-package com.gary.msgshareapp
+package com.gary.msgshareapp.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.gary.msgshareapp.adapters.HobbiesAdapter
+import com.gary.msgshareapp.R
+import com.gary.msgshareapp.models.Supplier
 
 class HobbiesActivity: ComponentActivity() {
 
