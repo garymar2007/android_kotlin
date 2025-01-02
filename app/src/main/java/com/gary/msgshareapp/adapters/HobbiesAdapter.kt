@@ -13,7 +13,9 @@ import com.gary.msgshareapp.R
 import com.gary.msgshareapp.showToast
 
 class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
-
+    companion object {
+        val TAG: String = HobbiesAdapter::class.java.simpleName
+    }
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var currentHobby: Hobby? = null
         var currentPosition: Int = 0

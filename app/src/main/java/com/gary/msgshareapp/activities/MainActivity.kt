@@ -5,10 +5,14 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import com.gary.msgshareapp.Constants
 import com.gary.msgshareapp.databinding.ActivityMainBinding
 import com.gary.msgshareapp.showToast
 
 class MainActivity : ComponentActivity() {
+    companion object {
+        val TAG: String = MainActivity::class.java.simpleName
+    }
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContentView(binding.root)
 
         binding.btnShowToast.setOnClickListener {
-            Log.i("MainActivity", "Button was clicked !")
+            Log.i(TAG, "Button was clicked !")
             showToast("Button was clicked !")
         }
 
@@ -27,7 +31,7 @@ class MainActivity : ComponentActivity() {
             showToast(message)
 
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("user_message", message)
+            intent.putExtra(Constants.USER_MSG_KEY, message)
             startActivity(intent)
         }
 

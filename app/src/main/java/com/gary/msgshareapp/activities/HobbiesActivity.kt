@@ -10,6 +10,9 @@ import com.gary.msgshareapp.R
 import com.gary.msgshareapp.models.Supplier
 
 class HobbiesActivity: ComponentActivity() {
+    companion object {
+        val TAG: String = HobbiesActivity::class.java.simpleName
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
