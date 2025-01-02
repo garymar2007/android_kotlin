@@ -16,6 +16,10 @@ class HobbiesActivity: ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_hobbies)
 
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
 
@@ -24,6 +28,5 @@ class HobbiesActivity: ComponentActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = layoutManager
         //recyclerView.setHasFixedSize(true)
-
     }
 }

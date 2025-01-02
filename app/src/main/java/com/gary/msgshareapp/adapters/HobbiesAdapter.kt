@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.gary.msgshareapp.models.Hobby
 import com.gary.msgshareapp.R
 
-class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
+class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var currentHobby: Hobby? = null
