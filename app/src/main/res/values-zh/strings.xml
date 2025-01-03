@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">信息分享应用程序</string>
+    <string name="btn_show_toast">显示吐司信息</string>
+    <string name="welcome_txt">您好，欢迎来到 Gary 的 Android 世界！</string>
+    <string name="msg_hint">输入您的留言</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_share_to_other">分享到其他应用程序</string>
+    <string name="btn_hobbies">爱好</string>
+
+    <string name="txt_view">文本视图</string>
+
+    <string name="title">标题</string>
+
+    <string name="select_your_apps">选择您的应用程序：</string>
+
+    <string name="hi">你好, </string>
+
+    <string name="btn_was_clicked">按钮被点击！</string>
+</resources>

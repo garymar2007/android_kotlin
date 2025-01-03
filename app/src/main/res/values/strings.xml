@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MsgShareApp</string>
+
+    <string name="btn_show_toast">Show Toast</string>
+    <string name="welcome_txt">Hello, welcome to Gary\'s Android World !</string>
+    <string name="msg_hint">Enter your message</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_share_to_other">Share TO Other APPS</string>
+    <string name="btn_hobbies">Hobbies</string>
+
+    <string name="txt_view">TextView</string>
+
+    <string name="title">Title</string>
+
+    <string name="select_your_apps">Select your app: </string>
+
+    <string name="hi">Hi, </string>
+
+    <string name="btn_was_clicked">Button was clicked !</string>
 </resources>

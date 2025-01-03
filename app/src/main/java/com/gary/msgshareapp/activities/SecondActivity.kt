@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.gary.msgshareapp.Constants
+import com.gary.msgshareapp.R
 import com.gary.msgshareapp.databinding.ActivitySecondBinding
 import com.gary.msgshareapp.showToast
 
@@ -22,7 +23,7 @@ class SecondActivity: ComponentActivity() {
 
         // Share data in implicit intent
         val message = intent.getStringExtra(Constants.USER_MSG_KEY)
-        showToast( "Hi, $message")
+        showToast( resources.getString(R.string.hi) + message)
 
         binding.txtUserMessage.text = message
     }
