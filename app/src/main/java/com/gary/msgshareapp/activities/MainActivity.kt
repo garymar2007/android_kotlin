@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
 import com.gary.msgshareapp.Constants
+import com.gary.msgshareapp.R
 import com.gary.msgshareapp.databinding.ActivityMainBinding
 import com.gary.msgshareapp.showToast
 
@@ -22,8 +23,8 @@ class MainActivity : ComponentActivity() {
         setContentView(binding.root)
 
         binding.btnShowToast.setOnClickListener {
-            Log.i(TAG, "Button was clicked !")
-            showToast("Button was clicked !")
+            Log.i(TAG, resources.getString(R.string.btn_was_clicked))
+            showToast(resources.getString(R.string.btn_was_clicked))
         }
 
         binding.btnSendMsgToNextActivity.setOnClickListener {
@@ -42,7 +43,7 @@ class MainActivity : ComponentActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, message)
             intent.type = "text/plain"
 
-            startActivity(Intent.createChooser(intent, "Select your app: "))
+            startActivity(Intent.createChooser(intent, resources.getString(R.string.select_your_apps)))
         }
 
         binding.btnRecyclerView.setOnClickListener {

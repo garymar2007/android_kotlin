@@ -11,8 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="Hello, welcome to Gary's Android World !"
-        tools:ignore="HardcodedText" />
+        android:text="@string/welcome_txt" />
 
     <Button
         android:id="@+id/btnShowToast"
@@ -20,8 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:text="Show Toast"
-        tools:ignore="HardcodedText" />
+        android:text="@string/btn_show_toast" />
 
     <EditText
         android:id="@+id/editUserMessage"
@@ -31,8 +29,7 @@
         android:layout_marginTop="300dp"
         android:autofillHints="Name"
         android:inputType="text"
-        android:text="Enter your message"
-        tools:ignore="HardcodedText,LabelFor" />
+        android:hint="@string/msg_hint" />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
@@ -40,8 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="400dp"
-        android:text="Next"
-        tools:ignore="HardcodedText" />
+        android:text="@string/btn_next" />
 
     <Button
         android:id="@+id/btnShareToOtherApp"
@@ -49,8 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="450dp"
-        android:text="Share TO Other APPS"
-        tools:ignore="HardcodedText" />
+        android:text="@string/btn_share_to_other" />
 
     <Button
         android:id="@+id/btnRecyclerView"
@@ -59,7 +54,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="46dp"
-        android:text="Hobbies"
-        tools:ignore="HardcodedText" />
+        android:text="@string/btn_hobbies" />
 
 </RelativeLayout>
